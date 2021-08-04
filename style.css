@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    color: grey;
+}
+.nav-bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    height:50px;
+    margin-bottom: 30px;
+    
+}
+.nav-bar a{
+    text-decoration: none;
+    color: grey;
+}
+.logo{
+    padding: 5px 10px;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;   
+}
+.nav-list-item{
+    padding: 10px 10px 10px 10px;
+    margin-top: 15px;
+}
+
+.top-image{
+    width:100%;
+    height:500px;
+    object-fit: cover;
+    z-index: -1;
+}
+.top-bar{
+    width:100%;
+    background:url(assets/top-section_4360x1500.jpg);
+    height:500px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.top-bar h1 ,.top-bar p ,.top-bar button{
+    text-align: center;
+
+}
+.top-bar button{
+    width:200px;
+    height: 30px;
+    align-self: center;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(65, 65, 236);
+}
+.top-bar p{
+    width:50%;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2%;
+}
+.one-liner{
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 812px) 
+{
+    .video-grid{
+        display: grid;
+        grid-template-columns:1 1fr;
+        grid-template-rows:repeat(4,auto);
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+    }
+        
+}
+
+@media only screen and (min-width:820px){
+.video-grid{
+    display: grid;
+    grid-template-columns: repeat(3,20%);
+    grid-template-rows:repeat(4,auto);
+    column-gap:40px;
+    justify-content: center;
+    align-items: center;
+}
+}
+.video-box{
+    display: flex;
+    flex-direction: column;
+}
+.video-grid img{
+    width:100%;
+    height:190px;
+}
+.video-box{
+    width:100%;
+}
+.video-grid h4{
+    margin-top: 3px;
+    font-size: 12px;
+    color: black;
+}
+.video-grid p{
+    font-size: 12px;
+    margin-top:-10px;
+}
+.video-button{
+    display: flex;
+    flex-direction: row;
+    width:200px;
+    height:30px;
+    justify-content: start;
+
+}
+.video-grid button{
+    border-radius: 15px;
+    margin-right: 5px;
+    font-family: cursive;
+    color: azure;
+    background-color: rgb(88, 154, 230);
+    font-size: 11px;
+    border: none;
+    width:100px;
+    margin-bottom: 6px;
+}
+
+.title{
+    text-align: center;
+    color: black;   
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns:repeat(3,20%);
+    grid-template-rows: repeat(3,auto);
+    column-gap: 60px;
+    justify-content: center;
+}
+.feature-img{
+    padding: 20px;
+    background-color:rgb(245, 244, 244);
+    max-width: 100%;
+    max-height: auto;   
+    /* margin-left: 8px; */
+}
+.img-frame{
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.feature-box{
+    padding-top: 30px;
+}
+.feature-grid .feature-name{
+    text-align: center;
+}
+.feature-grid .feature-description{
+    text-align: center;
+    font-size: 11px;
+}
+.benefit-box{
+    display:grid;
+    grid-template-areas:
+    "image  title"
+    "image  description";
+    grid-auto-columns: min(200px, 30%) 50%;
+    justify-content: center;
+}
+.benefit-img{
+    grid-area: image;
+    justify-self:center;
+    align-self: center;
+}
+.benefit-name{
+    grid-area: title;
+    font-size: 12px;
+    margin-bottom: -5px;
+}
+.benefit-description{
+    grid-area: description;
+}
+.benefits-grid{
+    display:grid;
+    justify-content: center;
+}
+.benefits-grid img{
+    width:80px;
+    margin-left: 60px;
+}
+.collection-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+}
+.startup-name{
+    background-image: url("assets/collections/collection-startup_460x184.png");
+    max-width: 400px;
+    display: flex;
+    height: 180px;
+    flex: 1 1 100%;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.mlearn-name{
+    background-image: url("assets/collections/collection-ml_461x184.png");
+    max-width: 400px;
+    display: flex;
+    height: 180px;
+    flex: 1 1 100%;
+    margin: 0px 20px;
+    justify-content: center;
+    align-items: center;
+}
+.collection-container h4{
+    color: white;
+    font-size: 14px;
+}
+.outer-box{
+    display: grid;
+    background-color: lightgrey;
+    padding: 30px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.using-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 12px;
+    justify-self: center;
+    align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.search-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+.search-input{
+    width: 50%;
+    padding: 10px;
+    border: 3px solid lightgray;
+    border-radius:2px ;
+    border-right: none;
+    font-size: 20px;
+    color: tomato;
+    background: none;
+    align-self: center;
+    margin-left: 20%;
+  }
+.search-button{
+    text-align: center;
+    height: 51px;
+    width: auto;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px ;
+    border-left: none;
+    background: none;
+    font-size: 20px;
+  }
+.search-box button{
+    background-color: rgb(37, 47, 141);
+    color: white;
+  }
+  
+.platform-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.platform-outer-box{
+    background-color: lightgray;
+    padding: 20px;
+    height:300px;
+    align-items: center;
+}
+.plat-img{
+    display: flex;
+    flex-grow: 0.2;
+    margin-top:80px;
+}
+
+.plat-title{
+    text-align: center;
+    color: black;
+    margin-top:100px;
+    margin-bottom: -70px;
+}
